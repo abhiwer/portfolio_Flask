@@ -16,6 +16,5 @@ def download_file():
     return send_file(path, as_attachment=True)
 
 
-if __name__ == "__main__":
-    app.run(port=5000)
+
     
