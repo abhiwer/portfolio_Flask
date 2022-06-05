@@ -1,4 +1,3 @@
-from platform import machine
 from flask import Flask, render_template, send_file
 import requests
 
