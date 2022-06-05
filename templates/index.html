@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Abhinav Priyadarshi Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About Me</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact Me</a>
+
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About Me</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact Me</a>
+  <!--
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+  -->
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/static/Face_detection.png" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Open CV Projects</h3>
+      <p><b>Using Bounding boxes to detect face</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="static/vehicle detection.jpeg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>PySpark Project</h3>
+      <p><b>Normal Pyspark Project</b></p>    
+    </div>
+  </div>
+
+
+  <!-- About Me Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
+    <h2 class="w3-wide">About Me</h2>
+    <p><a href="{{url_for('download_file')}}" class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom">Download Resume</a></p>
+    <p class="w3-opacity"><i>Software Developer</i></p>
+    <p class="w3-justify">
+      Developer with a passion for creating scalable applications.
+I just graduated with a Master's in Electronics Engineering from Nottingham Trent. 
+I have a deep interest in the logic behind any system be it a chip or any software application deployed in the cloud or any distributed system.
+    </p>
+      
+<p class="w3-justify">I have a good understanding of Software Development Techniques Agile, TDD and DevOps.
+  My main programming language is Python3, but I am good with any Object-Oriented Programming Languages.</p>
+<p class="w3-justify">Fun Facts About me:</p>
+<p class="w3-justify">Let me introduce myself, my interest in coding got its first push when I looked at the HTML page for the first time in standard 3rd, then I asked my teacher If I can put my name on that page.
+
+  After that, I got a chance to know/hands-on many languages of computer than I can speak. Let me tell you my list of known programming languages, ASSEMBLY, C, C++, Python and more.</p>
+<p class="w3-justify">When I am not coding I pass my time, reading the news.</p>
+
+
+<p class="w3-justify">About this Website:</p>
+<p class="w3-justify">Version: 0.1</p>
+<p class="w3-justify">This website tech stacks:</p>
+<p class="w3-justify">Flask, HTML/CSS, Python3.</p>
+
+<p class="w3-justify">Version: 0.2</p> 
+<p class="w3-justify">Coming Soon...</p>
+    
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">Contact Me</h2>
+    <p class="w3-opacity w3-center"><i>"I will be waiting for your call"</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-linkedin" style="width:30px" ></i><button onclick="document.location='https://www.linkedin.com/in/abhinavpriyadarshi/'">View Linkedin</button><br>
+        <i class="fa fa-github" style="width:30px" ></i><button onclick="document.location='https://github.com/abhiwer'">View GitHub</button><br>
+        <i class="fa fa-map-marker" style="width:30px"></i> Nottingham, UK<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +44 7721952228<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> <a href="mailto:abhinavpriyadarshi2020@gmail.com">abhinavpriyadarshi2020@gmail.com</a><br>
+      </div>
+      
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <a href="https://github.com/abhiwer" class="fa fa-github w3-hover-opacity" >
+      <i class="icon-github"></i>
+      </a>
+
+  <p class="w3-medium">Made with Love by Abhinav</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+</script>
+
+</body>
+</html>
