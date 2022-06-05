@@ -13,7 +13,3 @@ def get_all_posts():
 def download_file():
     path="static/Abhinav_Priyadarshi_CV.pdf"
     return send_file(path, as_attachment=True)
-
-
-
-    
